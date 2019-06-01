@@ -3,8 +3,9 @@
     margin: 0;
     font-family: 微軟正黑體;
     color: white;
-    border: 1px solid white;
+    /* border: 1px solid rgba(0,0,0,0); */
     text-shadow: 0 3px 5px  rgba(0, 0,0, 0.3);
+    font-weight: 900;
 }
 
 html,body{
@@ -18,7 +19,10 @@ body{
 /* 整體頁面 */
 .main{
     width: 80%;
-    margin: 0 auto;
+    margin:10px auto 0 auto;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 80%;
 }
 
 /* 導覽列 */
@@ -34,6 +38,8 @@ body{
     padding: 10px;
     border-bottom: 1px solid white;
 }
+.nav ul li:hover, .nav #logo:hover {
+    background-color: rgba(128, 57, 0, 0.603)}
 
 .nav #logo{
     display: inline-block;
@@ -50,6 +56,7 @@ body{
 .contain p{
     width: 300px;
     margin-top: 80px;
+    line-height: 30px;
 }
 
 .contain a{
@@ -61,14 +68,86 @@ body{
     margin-top: 50px;
     text-decoration: none;
     border: 1px solid white;
-    background-color:rgba(211, 100, 27, 0.5)
+    background-color: rgba(128, 57, 0, 0.603);
+    text-shadow: none;
 }
 .contain a:hover{
     background-color:transparent;
 }
 .contain hr{
     width: 300px;
-    height: 5px;
+    height: 2px;
     background-color: white;
     margin-top: 30px;    
+}
+/* 按鈕 */
+.button {
+    text-align: center;
+    margin-top: 30px;
+}
+.button a {
+    display: inline-block;
+    width: 100px;
+    background-color: rgba(128, 57, 0, 0.603);
+    border-radius: 50%;
+    padding: 30px;
+    border: 1px solid white;
+    margin-left: 50px;
+}
+.button a:first-child {
+    margin-left: 0;
+}
+.button a:hover {
+    background-color: transparent;
+
+}
+.button a img {
+    width: 100%;
+}
+
+/* 頁尾 */
+.footer {
+    text-align: center;
+    background-color: rgba(128, 57, 0, 0.603);
+    height: 80px;
+    width: 100%;
+    line-height: 80px;
+    position: fixed;
+    bottom: 0;
+}
+
+/* 關於我 */
+.box {
+    width: 100%;
+    height: 500px;
+    background-image: url(about.jpg);
+    background-size: cover;
+    margin-top: 100px;
+    text-align: center;
+    line-height: 500px;
+    font-size: 24px;    
+    border: 30px solid white;
+    box-sizing: border-box;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* 商品 */
+.box-fifty {
+    width: 50%;
+    height: 400px;
+    background-size: cover;
+    float: left;
+    text-align: center;
+    line-height: 400px;
+    font-size: 30px;
+    margin-top: 100px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+.bakery1 {
+    background-image: url(bakery1.jpg);
+    background-position: center center;
+}
+.bakery2 {
+    background-image: url(bakery2.jpg);
+    background-position: center center;
 }
